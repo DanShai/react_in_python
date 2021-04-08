@@ -5,3 +5,8 @@ https://danshai.github.io/react_in_python/
 
 ## the javascript version is at traversy media:
 https://github.com/bradtraversy/breaking-bad-cast
+
+# usage
+1. yarn
+2. yarn patch
+3. yarn start
