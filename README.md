@@ -10,3 +10,6 @@ https://github.com/bradtraversy/breaking-bad-cast
 1. yarn
 2. yarn patch
 3. yarn start
+
+# requirements
+python 3.7.x
