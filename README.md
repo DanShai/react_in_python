@@ -13,3 +13,4 @@ https://github.com/bradtraversy/breaking-bad-cast
 
 # requirements
 python 3.7.x
+pip install transcrypt
