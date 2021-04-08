@@ -1,0 +1,40 @@
+{
+  "name": "react_in_python",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "danshai",
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://danshai.github.io/react_in_python",
+  "parcel-plugin-python": {
+    "command": "python -m transcrypt",
+    "arguments": [
+      "--nomin",
+      "--map",
+      "-k",
+      "-e",
+      "--verbose"
+    ]
+  },
+  "scripts": {
+    "start": "rm -rf dev; rm -rf src/__target__; NODE_ENV=development parcel --no-cache src/index.html --out-dir dev",
+    "build": "rm -rf dist; NODE_ENV=production parcel build src/index.html --no-source-maps --out-dir dist --no-cache && cp dist/index.html dist/404.html",
+    "predeploy": "rm -rf node_modules/gh-pages/.cache; NODE_ENV=production parcel build src/index.html --no-source-maps --out-dir dist --public-url '/react_in_python'",
+    "deploy": "gh-pages -d dist",
+    "patch": "./parcel_patch.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-transcrypt": "^1.0.20"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "axios": "^0.21.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-number-format": "^4.5.3"
+  }
+}
