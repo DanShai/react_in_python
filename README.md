@@ -12,5 +12,5 @@ https://github.com/bradtraversy/breaking-bad-cast
 3. yarn start
 
 # requirements
-python 3.7.x
-pip install transcrypt
+- python 3.7.x
+- pip install transcrypt
