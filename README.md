@@ -13,4 +13,7 @@ https://github.com/bradtraversy/breaking-bad-cast
 
 # requirements
 - python 3.7.x
-- pip install transcrypt
+- better use anaconda for your virtual env then : 
++ conda create -n mytranscrypts python=3.7
++ conda activate mytranscrypts
++ pip install transcrypt
